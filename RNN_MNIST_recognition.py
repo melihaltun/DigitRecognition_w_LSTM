@@ -34,5 +34,3 @@ opt = keras_legacy.Adam(learning_rate=1e-3, decay=1e-5)
 model.compile(loss='sparse_categorical_crossentropy', optimizer=opt, metrics=['accuracy'])
 
 model.fit(x=x_train, y=y_train, epochs=12, validation_data=(x_test, y_test))
-
-dummy = 1
